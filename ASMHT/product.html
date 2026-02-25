@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Sản Phẩm - Brick Game</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+        body { background: #fff; color: #333; }
+
+        /* --- HEADER & MENU ĐỒNG BỘ --- */
+        header { background: #1a1a1a; padding: 10px 0; border-bottom: 4px solid #ff5722; position: sticky; top: 0; z-index: 100; }
+        .container { width: 1100px; margin: 0 auto; max-width: 100%; padding: 0 15px; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; }
+        
+        .logo-img { height: 100px; object-fit: contain; }
+
+        .menu ul { display: flex; list-style: none; gap: 10px; }
+        .menu a { color: #fff; text-decoration: none; font-weight: bold; padding: 10px 15px; border-radius: 5px; transition: 0.3s; }
+        .menu a:hover { background-color: #ff5722; color: #fff; transform: translateY(-2px); }
+
+        /* --- CHI TIẾT SẢN PHẨM --- */
+        .detail-box { display: flex; gap: 50px; margin-top: 50px; padding-bottom: 50px; }
+        
+        .img-col { flex: 1; text-align: center; }
+        .img-col img { width: 100%; max-width: 450px; border: 1px solid #eee; border-radius: 10px; }
+
+        .info-col { flex: 1; }
+        .breadcrumb { color: #777; margin-bottom: 10px; font-size: 14px; }
+        .p-name { font-size: 32px; font-weight: bold; margin-bottom: 10px; }
+        .p-price { color: #ff5722; font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+        
+        .desc { line-height: 1.6; color: #555; margin-bottom: 30px; }
+        .desc li { margin-bottom: 8px; }
+
+        .btn-buy { background: #ff5722; color: white; padding: 15px 40px; border: none; font-size: 18px; font-weight: bold; border-radius: 5px; cursor: pointer; transition: 0.3s; }
+        .btn-buy:hover { background: #e64a19; transform: scale(1.05); }
+
+        footer { background: #222; color: #ccc; text-align: center; padding: 20px; border-top: 5px solid #ff5722; }
+
+        /* Responsive Mobile */
+        @media (max-width: 768px) {
+            .nav-bar { flex-direction: column; gap: 10px; }
+            .detail-box { flex-direction: column; padding: 0 15px; }
+            .img-col img { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-bar">
+        <a href="index.html">
+            <img src="ảnh.jpg/brick_game_gaming_logo-removebg-preview.png" alt="Logo" class="logo-img">
+        </a>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">TRANG CHỦ</a></li>
+                <li><a href="services.html">DỊCH VỤ</a></li>
+                <li><a href="product.html" style="background:#ff5722">SẢN PHẨM</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container detail-box">
+    <!-- Cột Ảnh -->
+    <div class="img-col">
+        <img src="ảnh.jpg/máy chơi game 4.jpg" alt="Brick Game Pro">
+    </div>
+
+    <!-- Cột Thông tin -->
+    <div class="info-col">
+        <div class="breadcrumb">Trang chủ > Sản phẩm > Brick Game Pro</div>
+        <h1 class="p-name">Máy Chơi Game Brick Pro</h1>
+        <p class="p-price">350.000đ</p>
+        
+        <div class="desc">
+            <p><strong>Thông số kỹ thuật:</strong></p>
+            <ul>
+                <li>Màn hình: 4.0 inch màu LCD sắc nét.</li>
+                <li>Số lượng game: 500 game cài sẵn (Mario, Contra, Tank...).</li>
+                <li>Pin: Sạc Type-C, dung lượng 1200mAh (chơi 6 tiếng).</li>
+                <li>Kết nối: Có dây AV để xuất hình ảnh lên Tivi.</li>
+            </ul>
+            <br>
+            <p style="color:green">✔ Còn hàng - Giao ngay trong 2h</p>
+        </div>
+
+        <button class="btn-buy" onclick="alert('Đã thêm vào giỏ hàng!')">MUA NGAY</button>
+    </div>
+</div>
+
+<footer>
+    <!-- BOX ĐĂNG KÝ NHẬN TIN -->
+<div class="newsletter">
+    <h3>Đăng Ký Nhận Tin</h3>
+    <p>Nhập email để nhận mã giảm giá 50% cho đơn hàng đầu tiên!</p>
+    <form class="news-form">
+        <input type="email" placeholder="Nhập email của bạn..." required>
+        <button type="submit" onclick="alert('Đã đăng ký thành công!')">ĐĂNG KÝ</button>
+    </form>
+</div>
+
+<footer>
+    <!-- LINK FACEBOOK & MẠNG XÃ HỘI -->
+    <div class="social-links">
+        <a href="https://www.facebook.com/vinh.nguyen.463556?locale=vi_VN" target="_blank">Facebook</a>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">Youtube</a>
+    </div>
+    <p>© 2026 Brick Gaming Store. All rights reserved.</p>
+</footer>
+
+<div class="chat-btn" onclick="alert('Đang kết nối Facebook Messenger...')">CHAT</div>
+
+    <p>© 2026 Brick Gaming Store</p>
+</footer>
+
+</body>
+</html>
